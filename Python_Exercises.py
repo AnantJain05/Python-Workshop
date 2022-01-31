@@ -7,6 +7,8 @@
 def power(a,b):
     
     # ** What is 7 to the power of 4?**
+    print(7**4)
+    print(a**b)
     
     return None
 
@@ -19,6 +21,8 @@ def split_str(s):
 #     s = "Hi there Sam!"
 #     
 # **into a list. **
+    list = s.split() 
+    print(list)
 
     return None
 
@@ -33,6 +37,7 @@ def format(planet,diameter):
 # ** Use .format() to print the following string: **
 # 
 #     The diameter of Earth is 12742 kilometers.
+    print("The diameter of {} is {} kilometers.".format("Earth", 12742))
 
     return None
 
@@ -43,6 +48,8 @@ def indexing(lst):
 # ** Given this nested list, use indexing to grab the word "hello" **
 
 #lst = [1,2,[3,4],[5,[100,200,['hello']],23,11],1,7]
+    word = lst[3][1][2][0]
+    print(word)
 
     return None
 
@@ -52,6 +59,8 @@ def dictionary(d):
 # ** Given this nested dictionary grab the word "hello". Be prepared, this will be annoying/tricky **
 
 # d = {'k1':[1,2,3,{'tricky':['oh','man','inception',{'target':[1,2,3,'hello']}]}]}
+    word = d['k1'][3]['tricky'][3]['target'][3]
+    print(word)
 
 
     return None
@@ -60,7 +69,7 @@ def dictionary(d):
 def subjective():
     
 # ** What is the main difference between a tuple and a list? **
-# Tuple is _______
+# Tuple is immutable.
 
     return None
 
@@ -74,6 +83,8 @@ def domainGet(email):
 #     user@domain.com
 #     
 # **So for example, passing "user@domain.com" would return: domain.com**
+    str = "user@domain.com"
+    domain = str.split("@")[1]
 
     return None
 
